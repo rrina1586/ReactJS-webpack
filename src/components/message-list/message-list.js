@@ -1,8 +1,8 @@
 import { Input, InputAdornment, withStyles } from "@material-ui/core"
 import { Send } from "@material-ui/icons"
 import React from "react"
-import { Message } from "../message/message"
-import styles from "./message-field.module.css"
+import { Message } from "../message-list/message/message"
+import styles from "./message-list.module.css"
 
 const StyledInput = withStyles(() => ({
   root: {
@@ -14,7 +14,7 @@ const StyledInput = withStyles(() => ({
   },
 }))(Input)
 
-export class MessageField extends React.Component {
+export class MessageList extends React.Component {
   state = {
     value: "",
     messages: [
@@ -76,6 +76,7 @@ export class MessageField extends React.Component {
           <Message message={message} key={index} />
         ))}
         <StyledInput
+          autoFocus={true}
           onKeyPress={this.handlePressInput}
           onChange={this.handleChandeInput}
           value={value}
