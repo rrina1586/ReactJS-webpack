@@ -1,5 +1,5 @@
 import React from "react"
-import { Chat } from "../chat"
+import { Chat } from "../chat-list/chat/chat"
 
 export class ChatList extends React.Component {
   //сделать PropTypes

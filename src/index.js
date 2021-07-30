@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme } from "@material-ui/core"
 import React from "react"
 import ReactDom from "react-dom"
-import { ChatList, MessageField } from "./components"
+import { ChatList, MessageList } from "./components"
 // import styles from "/index.module.css"
 // import "./index.css"
 
@@ -11,7 +11,7 @@ const App = () => {
     <div style={{ display: "flex" }}>
       <ChatList />
       <hr />
-      <MessageField />
+      <MessageList />
     </div>
   )
 }
